@@ -1,0 +1,22 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main (){
+
+char str1[30],str2[30],str3[30],large[30];
+cout<<"Enter value of string 1"<<str1<<endl; 
+gets(str1);
+cout<<"Enter value of string 2"<<str2<<endl; 
+gets(str2);
+cout<<"Enter value of string 3"<<str3<<endl; 
+gets(str3);
+strcpy(large,str1);
+if (strlen(str2)>strlen(large));
+strcpy(large,str2);
+if (strlen(str3)>strlen(large));
+strcpy(large,str3);
+
+system ("cls");
+cout<<"largest string is"<<large<<endl;
+return 0;
+}
